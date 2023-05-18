@@ -12,6 +12,10 @@ Neste checkpoint, você encontrará os seguintes recursos:
 
 ## Pré-requisitos
 
+- Certifique-se de ter o software da Arduino IDE instalado. Você pode baixar o Arduino IDE no site oficial da Arduino em [arduino.cc](https://www.arduino.cc/).
+
+- Certifique-se de ter o Python instalado em seu sistema. Você pode baixar o Python em [python.org](https://www.python.org/downloads/).
+
 Antes de executar o código, é necessário instalar as seguintes bibliotecas:
 
 1. OpenCV (cv2): Execute o seguinte comando no terminal:
@@ -72,10 +76,44 @@ Certifique-se de que o Arduino esteja corretamente conectado ao computador e que
 
 Essas instruções permitem que você carregue o código Arduino na sua placa, permitindo que você utilize o programa desejado no Arduino para realizar suas funcionalidades específicas. Certifique-se de seguir os passos cuidadosamente e verifique se a placa e a porta serial selecionadas estão corretas antes de realizar o carregamento.
 
+
+# Executando o Arquivo Python
+
+Para executar o arquivo Python em seu ambiente, siga as etapas abaixo:
+
+## Executando o arquivo Python
+
+1. Abra um terminal ou prompt de comando.
+
+2. Navegue até o diretório onde o arquivo Python (.py) está localizado. Use o comando `cd` seguido do caminho do diretório para navegar até ele.
+
+   ```shell
+   cd /caminho/do/diretorio
+   ```
+
+3. Uma vez no diretório correto, execute o arquivo Python usando o seguinte comando:
+
+   ```shell
+   python nome_do_arquivo.py
+   ```
+
+   Substitua "nome_do_arquivo.py" pelo nome real do seu arquivo Python.
+
+   Por exemplo:
+
+   ```shell
+   python meu_programa.py
+   ```
+
+4. Pressione Enter para executar o comando.
+
+O arquivo Python será executado e o programa começará a ser executado em seu ambiente. Certifique-se de ter todas as dependências necessárias instaladas e configuradas corretamente para o correto funcionamento do programa.
+
+Certifique-se de seguir as etapas cuidadosamente e garantir que o Python esteja corretamente instalado e configurado em seu sistema antes de executar o arquivo Python.
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
 
 
 
