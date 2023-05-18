@@ -46,6 +46,12 @@ Siga os passos abaixo para configurar o ambiente e executar o código:
 4. Compile e carregue o código no Arduino.
 5. Execute o programa e observe o processamento de imagens em tempo real.
 
+
+## Circuito protoboard
+
+![image](https://github.com/CaarlosAndrade/checkpoint3/assets/44757104/fb5a9271-b375-4e08-aec8-f9db264bbf6f)
+
+
 ## Compile e carregue o código no Arduino utilizando arduino IDE.
 
 Para carregar o arquivo Arduino na Arduino IDE, siga as etapas abaixo:
