@@ -1,0 +1,19 @@
+int led = 13;
+
+void setup() {
+  Serial.begin(9600);  // Inicia a comunicação serial com uma taxa de transmissão de 9600 bps
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+   if (Serial.available() > 0) { // Verifica se há dados disponíveis para leitura
+    String message = Serial.readString(); // Lê a mensagem enviada pelo Python
+    Serial.println(message);
+    if(message == "1"){
+      digitalWrite(led, HIGH); // Envia a mensagem de volta para o Python
+    }
+    else if(message == "0"){
+      digitalWrite(led, LOW); // Envia a mensagem de volta para o Python
+    }
+  }
+}
