@@ -49,6 +49,8 @@ Siga os passos abaixo para configurar o ambiente e executar o código:
 
 ## Circuito protoboard
 
+Siga o esquema abaixo para montar o arduino:
+
 ![image](https://github.com/CaarlosAndrade/checkpoint3/assets/44757104/fb5a9271-b375-4e08-aec8-f9db264bbf6f)
 
 
