@@ -97,23 +97,23 @@ Para executar o arquivo Python em seu ambiente, siga as etapas abaixo:
    python nome_do_arquivo.py
    ```
 
-   Substitua "nome_do_arquivo.py" pelo nome real do seu arquivo Python.
-
-   Por exemplo:
-
-   ```shell
-   python meu_programa.py
-   ```
-
 4. Pressione Enter para executar o comando.
 
 O arquivo Python será executado e o programa começará a ser executado em seu ambiente. Certifique-se de ter todas as dependências necessárias instaladas e configuradas corretamente para o correto funcionamento do programa.
 
 Certifique-se de seguir as etapas cuidadosamente e garantir que o Python esteja corretamente instalado e configurado em seu sistema antes de executar o arquivo Python.
 
+## Recursos Adicionais
+
+- [Vídeo funcional do Checkpoint 3]([https://youtube.com/seu-video](https://youtu.be/xnJLwoM1Ujo))
+
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+
+
+
 
 
 
