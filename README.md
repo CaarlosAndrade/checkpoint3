@@ -105,7 +105,7 @@ Certifique-se de seguir as etapas cuidadosamente e garantir que o Python esteja 
 
 ## Recursos Adicionais
 
-- [Vídeo funcional do Checkpoint 3]([https://youtube.com/seu-video](https://youtu.be/xnJLwoM1Ujo))
+- [Vídeo funcional do Checkpoint 3](https://youtu.be/xnJLwoM1Ujo)
 
 ## Contribuição
 
