@@ -1,7 +1,8 @@
 import cv2
 import mediapipe as mp
 import constants
-import controller as cnt
+import serial
+import time
 
 # instanciando variaveis
 mp_drawing = mp.solutions.drawing_utils
@@ -26,13 +27,31 @@ font = cv2.FONT_HERSHEY_SIMPLEX
 font_scale = 1
 thickness = 1
 
+
+ser = serial.Serial('COM3', 9600)
+time.sleep(2)
+
+def led(num):
+     ser.write(1)
+     time.sleep(1)
+     
+    
+
 # atribui jogadas mão direita (player_1) mão esquerda (player_2)
 def setMove(landmark):
+        enviou = 0
         if (landmark[9].y > landmark[12].y):
-            cnt.led(1)
+            if (enviou != 1):
+                led(1)
+                enviou = 0
+                print(enviou)
+
         elif (landmark[9].x < landmark[12].x):
-            cnt.led(0)                 
-        
+            if(enviou != 0):
+                led(0)
+                enviou = 0
+                print(enviou)
+    
 # Definindo ganhador da partida 
 def setMatchWinner(move_player_1, move_player_2):
         
@@ -54,7 +73,7 @@ while video_capture.isOpened():
     if not ret:
         break
 
-    video = cv2.resize(video, (1000,600))
+    video = cv2.resize(video, (500,400))
     h, w, _ = video.shape
 
     # processando o video usando mediapipe
@@ -71,7 +90,6 @@ while video_capture.isOpened():
         for landmarks in hand_landmarks:
             # capturando os pontos de uma mão
             landmark = landmarks.landmark
-
             player_1_hand_landmark = landmark
             move_player_1 = setMove(player_1_hand_landmark)
             cv2.putText(video, "Jogador 1", (50,70), font, font_scale, (0,0,0), thickness, cv2.LINE_AA)
